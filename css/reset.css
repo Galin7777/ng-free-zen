@@ -19,7 +19,7 @@ img {
 }
 
 button { 
-  background: inherit;
+  background: none;
   border: none;
   font: inherit;
   color: inherit;
