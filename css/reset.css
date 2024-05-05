@@ -31,9 +31,8 @@ a {
 }
 
 select {
-  color: inherit;
-  background: inherit;
   appearance: none;
+  border: none;
 }
 
 input {
