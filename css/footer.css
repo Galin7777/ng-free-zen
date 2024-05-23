@@ -1,0 +1,21 @@
+.footer{
+  padding: 30px 15px;
+  color: #fff;
+  background: #484848;
+  border: 4px dashed red;
+} 
+
+.footer__wrapper{
+  border: 2px dashed blue;
+} 
+
+/*.footer__columns{}  */
+
+/*.footer__info{}  */
+
+/* .footer__logo{}  */
+
+/*.footer__copy{}  */
+
+/*.footer__dev{}  */
+
