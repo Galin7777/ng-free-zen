@@ -10,16 +10,16 @@
 
 /* .care__text-block {} */
 
-.care__title{
+.care__title {
   font-size: 26px;
   font-weight: 700;
 }
 
-.care__copy{
+.care__copy {
   margin-top: 20px;
 }
 
-.care__image-block{
+.care__image-block {
   border-radius: 20px;
   border: 1px solid #aaa ;
   overflow: hidden;
