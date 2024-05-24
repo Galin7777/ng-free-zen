@@ -1,10 +1,17 @@
+.column {
+  border: 1px dashed red;
+}
+
 .column img {
-  display: block;
+  /* display: block; */
   width: 40px;
   height: 40px;
 }
 
-/* . column__title {}*/
+.column__title {
+  padding: 10px;
+
+}
 
 /* . column__list {}*/
 
