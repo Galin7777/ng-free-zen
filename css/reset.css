@@ -8,16 +8,11 @@
 
 h1,h2,h3,h4,h5,h6 {
   font-size: inherit;
-  font-weight: 400;
 }
 
 ul,
 ol {
   list-style: none;
-}
-
-img {
-  width: 100%;
 }
 
 button { 
@@ -33,14 +28,9 @@ a {
   font-family: inherit ;
 }
 
-select {
-  appearance: none;
-  border: none;
-  background: none;
-}
-
-input {
+input,select {
   appearance: none;
   background: none;
   border: none;
+  outline: none;
 }
