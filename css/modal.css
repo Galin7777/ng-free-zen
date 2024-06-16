@@ -16,11 +16,7 @@
 
 .modal__body {
   position: relative;
-  min-width: 280px;
   padding: 30px 20px;
-  display: grid;
-  gap: 20px;
-  width: calc(100vw - 30px);
   background: #fff;
   border-radius: 5px;
 }
