@@ -26,9 +26,7 @@
   color: #aaa;
   position: absolute;
   left: 5px;
-
 }
-
 
 .form__field select {
   position: relative;
@@ -38,7 +36,6 @@
   padding: 5px;
   z-index: 1;
 }
-
 
 .form__checkbox {
   display: flex;
@@ -52,7 +49,7 @@
   width: 14px;
   height: 14px;
   border-radius: 2px;
-  border: 1px solid #00a1ff;
+  border: 1px solid #aaa;
 }
 
 .form__checkbox a {
@@ -62,9 +59,8 @@
 .form__checkbox input:checked::before {
   background-image: url("/assets/icons/check.svg");
   background-position: center;
-  background-size: 100%;
+  border-color: #00a1ff;
 }
-
 
 .form__submit {
   margin-top: 5px;
@@ -73,4 +69,3 @@
   font-size: 16px;
   border: 1px solid #222;
 }
-
