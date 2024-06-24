@@ -1,9 +1,9 @@
 /* fonts*/
 @font-face {
   font-family:'Nunito';
-  src: url('../assets/fonts/Nunito/Nunito-Regular.woff2') format('woff2');
-  src: url('../assets/fonts/Nunito/Nunito-Regular.woff') format('woff');
-  src: url('../assets/fonts/Nunito/Nunito-Regular.ttf') format('ttf');
+  src: url('/assets/fonts/Nunito/Nunito-Regular.woff2') format('woff2');
+  src: url('/assets/fonts/Nunito/Nunito-Regular.woff') format('woff');
+  src: url('/assets/fonts/Nunito/Nunito-Regular.ttf') format('ttf');
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -11,9 +11,9 @@
 
 @font-face {
   font-family:'Nunito';
-  src: url('../assets/fonts/Nunito/Nunito-Bold.woff2') format('woff2');
-  src: url('../assets/fonts/Nunito/Nunito-Bold.woff') format('woff');
-  src: url('../assets/fonts/Nunito/Nunito-Bold.ttf') format('ttf');
+  src: url('/assets/fonts/Nunito/Nunito-Bold.woff2') format('woff2');
+  src: url('/assets/fonts/Nunito/Nunito-Bold.woff') format('woff');
+  src: url('/assets/fonts/Nunito/Nunito-Bold.ttf') format('ttf');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
