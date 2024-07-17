@@ -6,6 +6,11 @@ body {
   font-weight: 400;
 }
 
+.app {
+  background: var(--bg-color-primary);
+  color: var(--color-primary);
+}
+
 img {
   width: 100%;
 }
