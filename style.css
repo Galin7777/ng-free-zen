@@ -38,7 +38,6 @@ input, select {
 
 .app.light {
   --color-primary: #000;
-  --color-secondary: #fff;
   --color-footer: #fff;
   --border-color-primary: #aaa;
   --border-color-secondary: #000;
@@ -47,17 +46,20 @@ input, select {
   --bg-color-modal-primary: #fff;
   --bg-color-modal-secondary: rgba(0, 0, 0, 0.6);
   --bg-color-burger: #000;
+  --color-icon: #000;
 }
 .app.dark {
   --color-primary: #fff;
+  --color-secondary: #222;
   --color-footer: #fff;
-  --border-color-primary: #fff;
+  --border-color-primary: #aaa;
   --border-color-secondary: #fff;
   --bg-color-primary: #484848;
   --bg-color-footer: #484848;
   --bg-color-modal-primary: #fff;
   --bg-color-modal-secondary: rgba(0, 0, 0, 0.8);
   --bg-color-burger: #fff;
+  --color-icon: #fff;
 }
 
 @font-face {
@@ -186,8 +188,11 @@ input {
   width: 77px;
   height: 30px;
 }
-.header__logo img {
+.header__logo svg {
   height: 100%;
+}
+.header__logo svg path {
+  fill: var(--color-icon);
 }
 .header__actions {
   margin-left: auto;
@@ -205,7 +210,7 @@ input {
   border-radius: 4px;
   overflow: hidden;
 }
-.header__lang img {
+.header__lang svg {
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -213,6 +218,9 @@ input {
   transform: translateY(-50%);
   width: 9px;
   height: 6px;
+}
+.header__lang svg path {
+  fill: var(--color-icon);
 }
 .header__lang select {
   padding-left: 8px;
@@ -223,6 +231,9 @@ input {
 .header__theme {
   width: 26px;
   height: 26px;
+}
+.header__theme path {
+  fill: var(--color-icon);
 }
 
 /* download*/
@@ -395,6 +406,7 @@ input {
 .modal {
   display: none;
   background: var(--bg-color-modal-secondary);
+  color: var(--color-secondary);
 }
 .modal.active {
   display: flex;
@@ -440,6 +452,7 @@ input {
 .form {
   display: grid;
   gap: 15px;
+  color: var(--color-secondary);
 }
 .form__field {
   border-bottom: 1px solid var(--border-color-primary);

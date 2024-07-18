@@ -2,7 +2,7 @@
 .modal {
   display: none;
   background: var(--bg-color-modal-secondary);
-
+  color: var(--color-secondary);
 
   &.active {
     display: flex;

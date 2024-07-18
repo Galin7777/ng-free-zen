@@ -2,6 +2,7 @@
 .form {
   display: grid;
   gap: $gap-small;
+  color: var(--color-secondary);
 
   &__field {
     border-bottom: 1px solid var(--border-color-primary);
