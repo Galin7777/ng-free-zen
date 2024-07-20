@@ -6,7 +6,7 @@
  
   &__wrapper {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     gap: $gap-large;
   }
   
@@ -21,13 +21,14 @@
   
   &__image-block {
     border-radius: $border-radius-primary;
-    border: 1px solid var (--border-color-primary);
+    border: 1px solid var(--border-color-primary);
     overflow: hidden;
-  }
   
-  &__image-block  img {
-    display: block;
-    height: 100%;
-    object-fit: cover;
+  
+    & img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    } 
   }
 }
