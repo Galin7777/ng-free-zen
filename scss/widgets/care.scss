@@ -1,0 +1,34 @@
+/* care*/
+@import '../utils/mixins';
+
+.care {
+  padding: $padding-section-xs;
+ 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+  }
+  
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  
+  &__copy {
+    margin-top: 20px;
+  }
+  
+  &__image-block {
+    border-radius: $border-radius-primary;
+    border: 1px solid var(--border-color-primary);
+    overflow: hidden;
+  
+  
+    & img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    } 
+  }
+}

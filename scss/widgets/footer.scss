@@ -1,0 +1,39 @@
+/* footer*/
+.footer {
+  padding: $padding-section-xs;
+  color: var(--color-footer);
+  background: var(--bg-color-footer);
+ 
+
+  &__wrapper {
+    display: grid;
+    gap: $gap-large;
+  } 
+
+  &__columns {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: $gap-large;
+  } 
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  } 
+
+  &__logo {
+    width: 216px;
+    height: 23px;
+  } 
+
+  &__copy {
+    font-size: 12px;
+    margin-top: 10px;
+  } 
+
+  &__dev {
+    margin: 0 auto;
+    width: 130px;
+  } 
+}

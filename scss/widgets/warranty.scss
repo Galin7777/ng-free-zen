@@ -1,0 +1,32 @@
+/* warranty*/
+.warranty {
+  padding: $padding-section-xs;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-large;
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  &__copy {
+    margin-top: 20px;
+  }
+
+  &__image-block {
+    height: 72vw;
+    border: 1px solid var(--border-color-primary);
+    border-radius: $border-radius-primary;
+    overflow: hidden;
+  }
+
+  &__image-block img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}

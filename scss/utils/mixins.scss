@@ -1,0 +1,26 @@
+@mixin font_face(
+  $path, 
+  $fileName, 
+  $family, 
+  $weight  
+) {
+  @font-face {
+    font-family: $family;
+    src: url('#{$path}/#{$fileName}.woff2') format('woff2');
+    src: url('#{$path}/#{$fileName}.woff') format('woff');
+    src: url('#{$path}/#{$fileName}.ttf') format('ttf');
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+//отрисовка линии вокруг картинки
+
+
+// Стнадартные отступы для всех секций
+// @mixin padding-standart() {
+//   padding: 30px 15px;
+// }
+
+

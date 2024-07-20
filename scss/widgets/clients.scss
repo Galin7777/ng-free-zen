@@ -1,0 +1,15 @@
+/* clients*/
+.clients {
+  padding: $padding-section-xs;
+
+  &__wrapper {
+    display: grid;
+    gap: $gap-large;
+ } 
+
+  &__brands {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gap-large;
+ }
+}

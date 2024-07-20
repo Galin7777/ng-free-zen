@@ -1,0 +1,43 @@
+/* burger*/
+.header__burger {
+  position: relative;
+  width: 30px;
+  height: 18px;
+  
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  span,
+  &::before,
+  &::after {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--bg-color-burger);
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &.active span {
+    display: none;
+  }
+
+  &.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+  }
+
+  &.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translateY(50%);
+  }
+}

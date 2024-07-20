@@ -1,0 +1,28 @@
+/* cashback*/
+.cashback {
+  padding: $padding-section-xs;
+
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  &__copy:first-of-type {
+    margin-top: 20px;
+  }
+
+  &__copy {
+    margin-top: 10px;
+  }
+
+  &__button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid var(--border-color-primary);
+  }
+}
