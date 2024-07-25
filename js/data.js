@@ -164,53 +164,58 @@ export const footer = {
           name:'Google Pay',
         },
       ],
-    }, 
-  //     title: 'Title offer',
-  //     links:[
-  //       {
-  //         url: 'https://example.com',
-  //         name:'Business',
-  //       },
-  //       {
-  //         url: 'https://example.com',
-  //         name:'Personal',
-  //       },
-  //     ],
-  //     title: 'Title language',
-  //     links: [
-  //       {
-  //         url: 'https://example.com',
-  //         name:'English',
-  //       },
-  //       {
-  //         url: 'https://example.com',
-  //         name:'Polish',
-  //       },
-  //       ],
-  //     title: 'Title follow us',
-  //     links: [
-  //       {
-  //         url: 'https://example.com',
-  //       },
-  //       ],
-  //     image: {
-  //           source: './assets/icons/in.svg',
-  //           description: 'Linkedin',
-  //         },
-  //     title: 'Title contact',
-  //     links: [
-  //       {
-  //         url: 'mailto:hello@zen.com',
-  //       },
-  //     ],
-  //   },
+    },  
+    {
+      title: 'Title offer',
+      links: [
+        {
+          url: 'https://example.com',
+          name:'Business',
+        },
+        {
+          url: 'https://example.com',
+          name:'Personal',
+        },
+      ],
+    },
+    {
+      title: 'Title language',
+      links: [
+        {
+          url: 'https://example.com',
+          name:'English',
+        },
+        {
+          url: 'https://example.com',
+          name:'Polish',
+        },
+      ],
+    },
+    {
+      title: 'Title follow us',
+      links: [
+        {
+          url: 'https://example.com',
+          source: './assets/icons/in.svg',
+          description: 'Linkedin icon',
+        },
+      ],
+    },
+    {
+      title: 'Title contact',
+      links: [
+        {
+          url: 'mailto:hello@zen.com',
+        },
+      ],
+    },
   ],
   info: {
     texts: ['Paragraph 1', 'Paragraph 2', 'Paragraph 3', 'Paragraph 4' ,'Paragraph 5', 'Paragraph 6'],
     developer: {
       url:'https://example.com',
       source: '../assets/icons/developer.svg',
-      description: 'Pci',
+      description: 'Pci icon',
     },
   },
 };
