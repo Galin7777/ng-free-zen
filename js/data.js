@@ -1,36 +1,36 @@
-export const header = {
-  navigation: [
-    {
-      name: 'Download',
-      key:'#download',
-    },
-    {
-      name: 'Warranty',
-      key:'#warranty',
-    },
-    {
-      name: 'Care',
-      key:'#care',
-    },
-    {
-      name: 'Cashback',
-      key:'#cashback',
-    },
-    {
-      name: 'Clients',
-      key:'#clients',
-    },
-  ],  
+export const primaryInfo = {
   langs: [
     {
-      value: 'en',
+      key: 'en',
       name:'EN',
     },
     {
-      value: 'ru',
+      key: 'ru',
       name:'RU',
     },
   ],  
+  navigation: [
+    {
+      name: 'Download',
+      key: 'download',
+    },
+    {
+      name: 'Warranty',
+      key: 'warranty',
+    },
+    {
+      name: 'Care',
+      key: 'care',
+    },
+    {
+      name: 'Cashback',
+      key: 'cashback',
+    },
+    {
+      name: 'Clients',
+      key: 'clients',
+    },
+  ],   
 };
 
 export const download = {
@@ -79,143 +79,208 @@ export const cashback = {
 export const clients = {
   brands: [
     {
-      lightSource: './assets/brands/light/1.svg',
-      darkSource: './assets/brands/dark/1.svg',
-      description: 'Rosegal',
+      name: 'Rosegal',
+      logo: {
+        lightSource: './assets/brands/light/1.svg',
+        darkSource: './assets/brands/dark/1.svg',
+      },
     },
     {
-      lightSource: './assets/brands/light/2.svg',
-      darkSource: './assets/brands/dark/2.svg',
-      description: 'Allegro',
+      name: 'Gearbest',
+      logo: {
+        lightSource: './assets/brands/light/2.svg',
+        darkSource: './assets/brands/dark/2.svg',
+      },
     },
     {
-      lightSource: './assets/brands/light/3.svg',
-      darkSource: './assets/brands/dark/3.svg',
-      description: 'Booking.com',
+      name: 'Allegro',
+      logo: {
+        lightSource: './assets/brands/light/3.svg',
+        darkSource: './assets/brands/dark/3.svg',
+      },
     },
     {
-      lightSource: './assets/brands/light/4.svg',
-      darkSource: './assets/brands/dark/4.svg',
-      description: 'Rtveuroagd',
+      name: 'Aliexpress',
+      logo: {
+        lightSource: './assets/brands/light/4.svg',
+        darkSource: './assets/brands/dark/4.svg',
+      },
     },
     {
-      lightSource: './assets/brands/light/5.svg',
-      darkSource: './assets/brands/dark/5.svg',
-      description: 'Gearbest',
+      name: 'Booking.com',
+      logo: {
+        lightSource: './assets/brands/light/5.svg',
+        darkSource: './assets/brands/dark/5.svg',
+      },
     },
     {
-      lightSource: './assets/brands/light/6.svg',
-      darkSource: './assets/brands/dark/6.svg',
-      description: 'Aliexpress',
+      name: 'MediaMarkt',
+      logo: {
+        lightSource: './assets/brands/light/6.svg',
+        darkSource: './assets/brands/dark/6.svg',
+      },
     },
     {
-      lightSource: './assets/brands/light/7.svg',
-      darkSource: './assets/brands/dark/7.svg',
-      description: 'Mediamarkt',
+      name: 'RTVeuroAGD',
+      logo: {
+        lightSource: './assets/brands/light/7.svg',
+        darkSource: './assets/brands/dark/7.svg',
+      },
     },
     {
-      lightSource: './assets/brands/light/8.svg',
-      darkSource: './assets/brands/dark/8.svg',
-      description: 'Groupon',
+      name: 'Groupon',
+      logo: {
+        lightSource: './assets/brands/light/8.svg',
+        darkSource: './assets/brands/dark/8.svg',
+      },
     },
   ],
 };
 
-export const footer = {
-  columns: [
+export const secondaryInfo = {
+  categories: [
     {
-      title: 'Title learn',
+      name: 'Learn',
       links: [
         {
           url: 'https://example.com',
-          name:'Help center',
+          content: {
+            type: 'text',
+            data: 'Help center',
+          },
         },
         {
           url: 'https://example.com',
-          name:'Join ZEN team',
+          content: {
+            type: 'text',
+            data: 'Join ZEN team',
+          },
         },
         {
           url: 'https://example.com',
-          name:'Privacy Policy',
+          content: {
+            type: 'text',
+            data: 'Privacy Policy',
+          },
         },
         {
           url: 'https://example.com',
-          name:'Cookies',
+          content: {
+            type: 'text',
+            data: 'Cookies',
+          },
         },
         {
           url: 'https://example.com',
-          name:'Terms of use',
+          content: {
+            type: 'text',
+            data: 'Terms of use',
+          },
         },
       ],
     },
     {
-      title: 'Title discover',
+      name: 'Discover',
       links: [
         {
          url: 'https://example.com',
-          name:'For developers',
+         content: {
+          type: 'text',
+          data: 'For developers',
+        },
         },
         {
           url: 'https://example.com',
-          name:'Apple pay',
+          content: {
+            type: 'text',
+            data: 'Apple pay',
+          },
         },
         {
           url: 'https://example.com',
-          name:'Google Pay',
+          content: {
+            type: 'text',
+            data: 'Google Pay',
+          },
         },
       ],
     },  
     {
-      title: 'Title offer',
+      name: 'Offer',
       links: [
         {
           url: 'https://example.com',
-          name:'Business',
+          content: {
+            type: 'text',
+            data: 'Business',
+          },
         },
         {
           url: 'https://example.com',
-          name:'Personal',
+          content: {
+            type: 'text',
+            data: 'Personal',
+          },
         },
       ],
     },
     {
-      title: 'Title language',
+      name: 'Language',
       links: [
         {
           url: 'https://example.com',
-          name:'English',
+          content: {
+            type: 'text',
+            data: 'English',
+          },
         },
         {
           url: 'https://example.com',
-          name:'Polish',
+          content: {
+            type: 'text',
+            data: 'Polish',
+          },
         },
       ],
     },
     {
-      title: 'Title follow us',
+      name: 'Follow us',
       links: [
         {
           url: 'https://example.com',
-          source: './assets/icons/in.svg',
-          description: 'Linkedin icon',
+          content: {
+            type: 'image',
+            data: './assets/icons/in.svg',
+          },
         },
       ],
     },
     {
-      title: 'Title contact',
+      name: 'Contact',
       links: [
         {
           url: 'mailto:hello@zen.com',
+          content: {
+            type: 'text',
+            data: 'hello@zen.com',
+          },
         },
       ],
     },
   ],
-  info: {
-    texts: ['Paragraph 1', 'Paragraph 2', 'Paragraph 3', 'Paragraph 4' ,'Paragraph 5', 'Paragraph 6'],
-    developer: {
-      url:'https://example.com',
-      source: '../assets/icons/developer.svg',
-      description: 'Pci icon',
+  texts: [
+    'Paragraph 1',
+    'Paragraph 2',
+    'Paragraph 3',
+    'Paragraph 4',
+    'Paragraph 5',
+    'Paragraph 6',
+  ],
+  developer: {
+    url:'https://example.com',
+    content:{
+      type: 'image',
+      data: './assets/icons/developer.svg',
     },
   },
 };
