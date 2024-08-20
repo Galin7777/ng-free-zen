@@ -2,13 +2,13 @@ export const primaryInfo = {
   langs: [
     {
       key: 'en',
-      name:'EN',
+      name: 'EN',
     },
     {
       key: 'ru',
-      name:'RU',
+      name: 'RU',
     },
-  ],  
+  ],
   navigation: [
     {
       name: 'Download',
@@ -30,12 +30,12 @@ export const primaryInfo = {
       name: 'Clients',
       key: 'clients',
     },
-  ],   
+  ],
 };
 
 export const download = {
-  title: 'Title text',
-  texts: ['Paragraph 1'],
+  title: 'Peaceful shopping mindful money',
+  texts: ['See how we can help with making your shopping experience and moneymanagement more ZEN.'],
   links: [
     {
       name: 'apple',
@@ -53,8 +53,10 @@ export const download = {
 };
 
 export const warranty = {
-  title: 'Title text',
-  texts: ['Paragraph 1', 'Paragraph 2'],
+  title: '1-year warranty boost',
+  texts: [
+    'ZEN cards have a very neat feature that will help you whenever your electronic devices start failing after the standard warranty ends, which is pretty common.',
+    'PWhen you buy any electronics with your ZEN shopping Mastercard, their warranty gets extended by one year. How does it work? It simply does. Automatically.'],
   image: {
     source: './assets/images/2.jpg',
     description: 'Basket',
@@ -62,8 +64,11 @@ export const warranty = {
 };
 
 export const care = {
-  title: 'Title text',
-  texts: ['Paragraph 1', 'Paragraph 2', 'Paragraph 3'],
+  title: 'ZEN Care',
+  texts: [
+    'Shopping online is usually a delightful experience. Until it s not.',
+    'Until something you buy, proves to be faulty, missing or a totally wrong item, you’re in for long product return procedures.',
+    'But, here comes ZEN Care: a free, built-in shopping protection.'],
   image: {
     source: './assets/images/3.jpg',
     description: 'Card',
@@ -71,8 +76,11 @@ export const care = {
 };
 
 export const cashback = {
-  title: 'Title text',
-  texts: ['Paragraph 1', 'Paragraph 2', 'Paragraph 3'],
+  title: 'and cashback!',
+  texts: [
+    'It saves a little bit of money while you’re shopping, but in many cases it takes ages to get anything out of it.',
+    'We gave it a thought and made cashback way more friendly.',
+    'Up to 14% of what you spend using ZEN Mastercard ® will materialize on your account right after the purchase. Order a consultation.'],
   buttonText: 'Order a consultation',
 };
 
@@ -183,11 +191,11 @@ export const secondaryInfo = {
       name: 'Discover',
       links: [
         {
-         url: 'https://example.com',
-         content: {
-          type: 'text',
-          data: 'For developers',
-        },
+          url: 'https://example.com',
+          content: {
+            type: 'text',
+            data: 'For developers',
+          },
         },
         {
           url: 'https://example.com',
@@ -204,7 +212,7 @@ export const secondaryInfo = {
           },
         },
       ],
-    },  
+    },
     {
       name: 'Offer',
       links: [
@@ -269,16 +277,16 @@ export const secondaryInfo = {
     },
   ],
   texts: [
-    'Paragraph 1',
-    'Paragraph 2',
-    'Paragraph 3',
-    'Paragraph 4',
-    'Paragraph 5',
-    'Paragraph 6',
+    'ZEN is a licensed financial institution under the supervision of the Central Bank of Lithuania approved by European Banking Authority for 31 countries.',
+    'Registration number of the company 304749651, VAT ID LT100011714916.',
+    'License of electronic money institutions number LB000457.',
+    'Share capital 2.185.000,00 EUR.',
+    'Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.',
+    'Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.',
   ],
   developer: {
-    url:'https://example.com',
-    content:{
+    url: 'https://example.com',
+    content: {
       type: 'image',
       data: './assets/icons/developer.svg',
     },
