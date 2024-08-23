@@ -1,17 +1,6 @@
-export type TitleData = {
-  content: string;
-  priority: number;
-};
-
-export type LinkData = {
-  name: string;
-  url: string;
-};
-
-export type ImageData = {
-  source: string;
-  description: string;
-};
+import type { TitleData } from '../../ui/Title/types';
+import type { ImageData } from '../../ui/Image/types';
+import type { LinkData } from '../../ui/Links/types';
 
 export type DownloadData = {
   title: TitleData;
