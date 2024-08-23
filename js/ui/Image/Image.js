@@ -9,7 +9,8 @@
  */
 
 export const Image = (image) => `
-<img
-  src="${image.source}"
-  alt="${image.description}"
-/>`;
+  <img
+    src="${image.source}"
+    alt="${image.description}"
+  />
+`;
