@@ -66,9 +66,9 @@
     ],
     "max-len": ["error", { "code": 180, "ignoreUrls": true }],
     "max-nested-callbacks": ["error", { "max": 5 }],
-    "new-cap": [
+   "new-cap": [
       "error",
-      { "newIsCap": true, "capIsNew": true, "properties": true }
+      { "newIsCap": true, "capIsNew": false, "properties": true }
     ],
     "new-parens": ["error"],
     "no-lonely-if": ["error"],
