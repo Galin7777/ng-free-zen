@@ -7,4 +7,8 @@
  * @param {Object} image
  * @returns {string} HTML
  */
-export const Image = (image) => `<img src="${image.source}" alt="${image.description}" />`;
+export const Image = (image) => `
+<img
+src="${image.source}"
+alt="${image.description}"
+/>`;
