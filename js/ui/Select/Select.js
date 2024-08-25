@@ -15,7 +15,9 @@ export const Select = (selectList, id) => `
   ${IconArrowDown()}
   <select id="${id}">
     ${selectList.map((selectItem) => `
-        <option value="${selectItem.key}">${selectItem.name}</option>
+      <option value="${selectItem.key}">
+        ${selectItem.name}
+      </option>
     `).join('')};
   </select>
 `;
