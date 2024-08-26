@@ -2,7 +2,7 @@ import { IconApple } from '../Icons/IconApple/IconApple.js';
 import { IconGoogle } from '../Icons/IconGoogle/IconGoogle.js';
 
 /**
- * @typedef {import ('./types').LinkData} LinkData
+ * @typedef {import ('./types.js').LinkData} LinkData
  */
 
 /**
