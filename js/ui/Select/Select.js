@@ -18,6 +18,6 @@ export const Select = (selectList, id) => `
       <option value="${selectItem.key}">
         ${selectItem.name}
       </option>
-    `).join('')};
+    `).join('')}
   </select>
 `;
