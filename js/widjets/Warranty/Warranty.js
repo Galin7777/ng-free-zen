@@ -15,7 +15,6 @@ export const Warranty = (data) => {
   const { title, texts, image } = data;
 
   return `
-
   <section class="warranty" id="warranty">
     <div class="warranty__wrapper">
       <div class="warranty__text-block">
