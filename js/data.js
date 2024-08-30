@@ -62,7 +62,7 @@ export const data = {
     },
     texts: [
       'ZEN cards have a very neat feature that will help you whenever your electronic devices start failing after the standard warranty ends, which is pretty common.',
-      'PWhen you buy any electronics with your ZEN shopping Mastercard, their warranty gets extended by one year. How does it work? It simply does. Automatically.',
+      'When you buy any electronics with your ZEN shopping Mastercard, their warranty gets extended by one year. How does it work? It simply does. Automatically.',
     ],
     image: {
       source: './assets/images/2.jpg',
