@@ -30,5 +30,5 @@ export const Header = (data) => `
         ${Burger('header__burger')}
       </div>
     </div>
-  </header
+  </header>
 `;
