@@ -30,7 +30,7 @@ export const Footer = (data) => {
               ${text}
             </p>
             `).join('')}
-          <a class="footer__dev" ${developer.url} href="https://example.com">
+          <a class="footer__dev" href="${developer.url}">
             ${IconDev()}
           </a>
         </div>
