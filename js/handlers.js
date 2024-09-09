@@ -1,9 +1,9 @@
 /**
- * @function HendleLogoBtn
+ * @function handleLogoClick
  * @description Smooth scrolling up
  */
 
-export const HendleLogoBtn = () => {
+export const  handleLogoClick = () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth',

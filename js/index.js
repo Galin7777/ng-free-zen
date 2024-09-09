@@ -6,7 +6,7 @@ import { Care } from './widjets/Care/Care.js';
 import { Cashback } from './widjets/Cashback/Cashback.js';
 import { Clients } from './widjets/Clients/Clients.js';
 import { Footer } from './widjets/Footer/index.js';
-import { HendleLogoBtn } from './hendlers.js';
+import { handleLogoClick } from './handlers.js';
 
 const $root = document.querySelector('#root');
 
@@ -18,6 +18,6 @@ $root?.insertAdjacentHTML('beforeend', Cashback(data.cashback));
 $root?.insertAdjacentHTML('beforeend', Clients(data.clients));
 $root?.insertAdjacentHTML('beforeend', Footer(data.secondaryInfo));
 
-const $LogoBtn = document.querySelector('#logo');
+const $logoBtn = document.querySelector('#logo');
 
-$LogoBtn?.addEventListener('click', HendleLogoBtn);
+$logoBtn?.addEventListener('click', handleLogoClick);
