@@ -1,5 +1,3 @@
-/* eslint-disable indent */
-
 /**
  * @typedef {import ('../../widjets/Footer/types').LinkData} LinkData
  */
