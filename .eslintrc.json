@@ -41,7 +41,8 @@
       {
         "SwitchCase": 1,
         "VariableDeclarator": { "let": 2, "const": 3 },
-        "MemberExpression": 1
+        "MemberExpression": 1,
+        "IgnoredNodes": ["TemplateLiteral *"]
       }
     ],
     "block-spacing": ["error", "always"],
