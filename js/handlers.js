@@ -26,10 +26,10 @@ export const handleLogoClick = () => {
  */
 
 export const onThemeClick = (event, brandsFromAPI) => {
-    /**@type {NodeListOf<HTMLImageElement>} */
-    const $brandNodes = document.querySelectorAll('[data-id="brand"]');
-    const $themeBtn = /** @type { HTMLElement | null } */ (event.currentTarget);
-    if (!$themeBtn) return;
+  /**@type {NodeListOf<HTMLImageElement>} */
+  const $brandNodes = document.querySelectorAll('[data-id="brand"]');
+  const $themeBtn = /** @type { HTMLElement | null } */ (event.currentTarget);
+  if (!$themeBtn) return;
   const $root = document.querySelector('#root');
   if (!$root) return;
 
