@@ -1,17 +1,17 @@
 /**
- * @typedef {import ('../../widjets/Footer/types').LinkData} LinkData
+ * @typedef {import ('../../types').ColumnLinkData} ColumnLinkData
  */
 
 /**
  * @function FooterLink
- * @param {LinkData} linkData
+ * @param {ColumnLinkData} columnLinkData
  * @returns {string} HTML
  */
 
-export const FooterLink = (linkData) => `
-  <a href="${linkData.url}">
-    ${linkData.content.type === 'text'
-      ? linkData.content.data
-      : `<img src="${linkData.content.data}" alt= "Linkedin" />`}
+export const FooterLink = (columnLinkData) => `
+  <a href="${columnLinkData.url}">
+    ${columnLinkData.content.type === 'text'
+      ? columnLinkData.content.data
+      : `<img src="${columnLinkData.content.data}" alt= "Linkedin" />`}
   </a>
 `;

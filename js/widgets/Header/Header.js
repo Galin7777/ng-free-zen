@@ -6,7 +6,7 @@ import { Theme } from '../../features/Theme/index.js';
 
 
 /**
- * @typedef {import('./types.js').HeaderData} HeaderData
+ * @typedef {import('./types').HeaderData} HeaderData
  */
 
 /**

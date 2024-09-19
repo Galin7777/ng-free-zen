@@ -1,5 +1,5 @@
 /**
- * @typedef {import('./types.js').ClientsData} ClientsData
+ * @typedef {import('./types').ClientsData} ClientsData
 /**
 
 /**

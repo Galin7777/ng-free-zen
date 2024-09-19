@@ -1,11 +1,11 @@
 import { dataFromAPI } from './data.js';
-import { Header } from './widjets/Header/Header.js';
-import { Download } from './widjets/Download/Download.js';
-import { Warranty } from './widjets/Warranty/Warranty.js';
-import { Care } from './widjets/Care/Care.js';
-import { Cashback } from './widjets/Cashback/Cashback.js';
-import { Clients } from './widjets/Clients/Clients.js';
-import { Footer } from './widjets/Footer/index.js';
+import { Header } from './widgets/index.js';
+import { Download } from './widgets/index.js';
+import { Warranty } from './widgets/index.js';
+import { Care } from './widgets/index.js';
+import { Cashback } from './widgets/index.js'
+import { Clients } from './widgets/index.js';
+import { Footer } from './widgets/index.js';
 import { handleLogoClick, onThemeClick } from './handlers.js';
 
 const $root = document.querySelector('#root');
@@ -20,6 +20,8 @@ $root?.insertAdjacentHTML('beforeend', Footer(dataFromAPI.secondaryInfo));
 
 const $logoBtn = document.querySelector('#logo');
 const $themeBtn = document.querySelector('#theme');
+// const $burgerBtn = document.querySelector('#burger');
 
 $logoBtn?.addEventListener('click', handleLogoClick);
 $themeBtn?.addEventListener('click', (event) => onThemeClick(event, dataFromAPI.clients.brands));
+// $burgerBtn?.addEventListener('click',)

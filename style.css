@@ -104,6 +104,7 @@ input {
 /*nav*/
 .nav {
   display: none;
+  background: var(--bg-color-primary);
 }
 .nav.active {
   display: block;
@@ -118,7 +119,7 @@ input {
   border-bottom: 1px solid var(--border-color-primary);
 }
 
-/* burger*/
+/*burger*/
 .header__burger {
   position: relative;
   width: 30px;
@@ -450,7 +451,7 @@ input {
   font-weight: 700;
 }
 
-/* form*/
+/*form*/
 .form {
   display: grid;
   gap: 15px;

@@ -1,5 +1,5 @@
-import { IconMoon } from './ui/Icons/IconMoon/index.js';
-import { IconSun } from './ui/Icons/IconSun/index.js';
+import { IconMoon } from './ui/icons/index.js';
+import { IconSun } from './ui/icons/index.js';
 
 /**
  * @function handleLogoClick
@@ -14,7 +14,7 @@ export const handleLogoClick = () => {
 };
 
 /**
- * @typedef {import('./widjets/Clients/types').BrandFromAPI} BrandFromAPI
+ * @typedef {import('./types').BrandFromAPI} BrandFromAPI
  */
 
 /**
@@ -22,7 +22,7 @@ export const handleLogoClick = () => {
  * @description In anonimous handler
  * @param {Event} event
  * @param {BrandFromAPI[]} brandsFromAPI
- *
+ * @returns {void}
  */
 
 export const onThemeClick = (event, brandsFromAPI) => {
@@ -54,3 +54,10 @@ export const onThemeClick = (event, brandsFromAPI) => {
     });
   };
 };
+
+// /**
+//  * @function onBurgerClick
+//  * @param {Event} event
+//  */
+
+// export const onBurgerClick = (event) => {};

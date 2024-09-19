@@ -2,7 +2,7 @@ import { Title } from '../../ui/Title/index.js';
 import { Image } from '../../ui/Image/index.js';
 
 /**
- * @typedef {import ('./types.js').WarrantyData} WarrantyData
+ * @typedef {import ('./types').WarrantyData} WarrantyData
  */
 
 /**

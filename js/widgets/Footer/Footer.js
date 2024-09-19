@@ -3,7 +3,7 @@ import { IconLogo2 } from '../../ui/icons/index.js';
 import { IconDev } from '../../ui/icons/index.js';
 
 /**
- * @typedef {import ('./types.js').FooterData} FooterData
+ * @typedef {import ('./types').FooterData} FooterData
  */
 
 /**
