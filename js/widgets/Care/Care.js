@@ -2,12 +2,12 @@ import { Title } from '../../ui/Title/index.js';
 import { Image } from '../../ui/Image/index.js';
 
 /**
- * @typedef {import ('./types.js').CareData} CareDataData
+ * @typedef {import ('./types').CareData} CareData
  */
 
 /**
  * @function Care
- * @param {CareDataData} data
+ * @param {CareData} data
  * @returns {string} HTML
  */
 

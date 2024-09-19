@@ -1,6 +1,6 @@
 import { Column } from '../../ui/Column/index.js';
-import { IconLogo2 } from '../../ui/Icons/IconLogo2/index.js';
-import { IconDev } from '../../ui/Icons/IconDev/index.js';
+import { IconLogo2 } from '../../ui/icons/index.js';
+import { IconDev } from '../../ui/icons/index.js';
 
 /**
  * @typedef {import ('./types').FooterData} FooterData

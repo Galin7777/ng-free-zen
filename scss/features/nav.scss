@@ -1,7 +1,8 @@
 /*nav*/
 .nav {
   display: none;
-
+  background: var(--bg-color-primary);
+  
   &.active {
     display: block;
     position: fixed;
