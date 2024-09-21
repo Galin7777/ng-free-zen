@@ -37,6 +37,23 @@ export type HeaderData = {
   navigation: NavItemData[];
 };
 
+// DownloadData types
+
+export type DownloadData = {
+  title: TitleData;
+  texts: string[];
+  links: LinkData[];
+  image: ImageData;
+};
+
+// WarrantyData types
+
+export type WarrantyData = {
+  title: TitleData;
+  texts: string[];
+  image: ImageData;
+};
+
 // CareData types
 
 export type CareData = {
@@ -70,14 +87,6 @@ export type ClientsData = {
   brands: BrandFromAPI[];
 };
 
-// DownloadData types
-
-export type DownloadData = {
-  title: TitleData;
-  texts: string[];
-  links: LinkData[];
-  image: ImageData;
-};
 
 // FooterData types
 
@@ -102,10 +111,13 @@ export type FooterData = {
   developer: ColumnLinkData;
 };
 
-// WarrantyData types
 
-export type WarrantyData = {
-  title: TitleData;
-  texts: string[];
-  image: ImageData;
-};
+export type AppData = {
+  primaryInfo: HeaderData;
+  download: DownloadData;
+  warranty: WarrantyData;
+  care: CareData;
+  cashback: CashbackData;
+  clients: ClientsData
+  secondaryInfo: FooterData;
+  }
