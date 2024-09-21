@@ -55,9 +55,33 @@ export const onThemeClick = (event, brandsFromAPI) => {
   };
 };
 
-// /**
-//  * @function onBurgerClick
-//  * @param {Event} event
-//  */
+/**
+ * @function onBurgerClick
+ * @description Handles burger button clicks and hides/shows menu items
+ */
 
-// export const onBurgerClick = (event) => {};
+export const onBurgerClick = () => {
+  const $burgerBtn = document.querySelector('#burger');
+  const $nav = document.querySelector('#nav');
+  if (!$burgerBtn || !$nav) return;
+
+  $burgerBtn.classList.toggle('active');
+  $nav.classList.toggle('active');
+  document.querySelectorAll('.nav__item').forEach((item) => {
+      item.addEventListener('click', (event) => {
+        event.preventDefault();
+        $nav.classList.remove('active');
+        $burgerBtn.classList.remove('active');
+        const link = item.querySelector('a');
+        if (!link) return;
+        const href = link.getAttribute('href');
+        if (!href) return;
+        const targetElement = document.querySelector(href);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+          });
+        }
+      });
+    });
+  };
