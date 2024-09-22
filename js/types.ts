@@ -87,7 +87,6 @@ export type ClientsData = {
   brands: BrandFromAPI[];
 };
 
-
 // FooterData types
 
 export type ContentData = {
@@ -110,7 +109,6 @@ export type FooterData = {
   texts : string[];
   developer: ColumnLinkData;
 };
-
 
 export type AppData = {
   primaryInfo: HeaderData;
