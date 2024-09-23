@@ -1,5 +1,6 @@
 import { IconMoon } from './ui/icons/index.js';
 import { IconSun } from './ui/icons/index.js';
+import { toggleBurgerAndNav } from './utils/index.js';
 
 /**
  * @function handleLogoClick
@@ -56,32 +57,50 @@ export const onThemeClick = (event, brandsFromAPI) => {
 };
 
 /**
- * @function onBurgerClick
- * @description Handles burger button clicks and hides/shows menu items
+ * @function handleBurgerClick
+ * @description Handles burger button clicks and hides
  */
 
-export const onBurgerClick = () => {
-  const $burgerBtn = document.querySelector('#burger');
-  const $nav = document.querySelector('#nav');
-  if (!$burgerBtn || !$nav) return;
+export const handleBurgerClick = () => {
+  toggleBurgerAndNav();
+};
 
-  $burgerBtn.classList.toggle('active');
-  $nav.classList.toggle('active');
+/**
+ * @function handleNavClick
+ * @description Controls the click on the burger shows the menu and scrolls through the sections
+ */
+
+export const handleNavClick = () => {
   document.querySelectorAll('.nav__item').forEach((item) => {
-      item.addEventListener('click', (event) => {
-        event.preventDefault();
-        $nav.classList.remove('active');
-        $burgerBtn.classList.remove('active');
-        const link = item.querySelector('a');
-        if (!link) return;
-        const href = link.getAttribute('href');
-        if (!href) return;
-        const targetElement = document.querySelector(href);
-        if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: 'smooth',
-          });
-        }
-      });
+    item.replaceWith(item.cloneNode(true));
+  });
+
+  document.querySelectorAll('.nav__item').forEach((item) => {
+  item.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  const link = item.querySelector('a');
+    if (!link) return;
+
+  const href = link.getAttribute('href');
+    if (!href) return;
+
+  const targetElement = document.querySelector(href);
+    if (!targetElement) return;
+
+  const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+  const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth',
     });
-  };
+      toggleBurgerAndNav();
+    });
+  });
+};
+
+// /**
+//  * @function handleLangClick
+//  * @param {Event} event
+//  * @returns {void}
+//  */
