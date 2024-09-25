@@ -70,37 +70,18 @@ export const handleBurgerClick = () => {
  * @description Controls the click on the burger shows the menu and scrolls through the sections
  */
 
-export const handleNavClick = () => {
-  document.querySelectorAll('.nav__item').forEach((item) => {
-    item.replaceWith(item.cloneNode(true));
-  });
-
-  document.querySelectorAll('.nav__item').forEach((item) => {
-  item.addEventListener('click', (event) => {
+export const handleNavClick = (event) => {
   event.preventDefault();
-
-  const link = item.querySelector('a');
-    if (!link) return;
-
-  const href = link.getAttribute('href');
-    if (!href) return;
-
-  const targetElement = document.querySelector(href);
-    if (!targetElement) return;
-
-  const headerHeight = document.querySelector('header')?.offsetHeight || 0;
-  const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+  const $nav = event.target.hash;
+  if (!$nav) return;
+  const targetElement = document.querySelector($nav);
+  if (targetElement) {
+    const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
     window.scrollTo({
       top: targetPosition,
       behavior: 'smooth',
     });
-      toggleBurgerAndNav();
-    });
-  });
+  }
+  toggleBurgerAndNav();
 };
-
-// /**
-//  * @function handleLangClick
-//  * @param {Event} event
-//  * @returns {void}
-//  */
