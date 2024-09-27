@@ -1,5 +1,6 @@
 import { IconMoon } from './ui/icons/index.js';
 import { IconSun } from './ui/icons/index.js';
+import { toggleBurgerAndNav } from './utils/index.js';
 
 /**
  * @function handleLogoClick
@@ -55,9 +56,32 @@ export const onThemeClick = (event, brandsFromAPI) => {
   };
 };
 
-// /**
-//  * @function onBurgerClick
-//  * @param {Event} event
-//  */
+/**
+ * @function handleBurgerClick
+ * @description Handles burger button clicks and hides
+ */
 
-// export const onBurgerClick = (event) => {};
+export const handleBurgerClick = () => {
+  toggleBurgerAndNav();
+};
+
+/**
+ * @function handleNavClick
+ * @description Controls the click on the burger shows the menu and scrolls through the sections
+ */
+
+export const handleNavClick = (event) => {
+  event.preventDefault();
+  const $nav = event.target.hash;
+  if (!$nav) return;
+  const targetElement = document.querySelector($nav);
+  if (targetElement) {
+    const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth',
+    });
+  }
+  toggleBurgerAndNav();
+};

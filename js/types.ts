@@ -1,4 +1,6 @@
-// Common types
+/**********************************************
+  Common types
+**********************************************/
 
 export type TitleData = {
   content: string;
@@ -15,7 +17,9 @@ export type ImageData = {
   description: string;
 };
 
-// HeaderData types
+/**********************************************
+  HeaderData types
+**********************************************/
 
 export type LangData = {
   name: string;
@@ -37,7 +41,30 @@ export type HeaderData = {
   navigation: NavItemData[];
 };
 
-// CareData types
+/**********************************************
+  DownloadData types
+**********************************************/
+
+export type DownloadData = {
+  title: TitleData;
+  texts: string[];
+  links: LinkData[];
+  image: ImageData;
+};
+
+/**********************************************
+  WarrantyData types
+**********************************************/
+
+export type WarrantyData = {
+  title: TitleData;
+  texts: string[];
+  image: ImageData;
+};
+
+/**********************************************
+  CareData types
+**********************************************/
 
 export type CareData = {
   title: TitleData;
@@ -45,7 +72,9 @@ export type CareData = {
   image: ImageData;
 };
 
-// CashbackData types
+/**********************************************
+  CashbackData types
+**********************************************/
 
 export type CashbackData = {
   title: TitleData;
@@ -53,7 +82,9 @@ export type CashbackData = {
   buttonText: string;
 };
 
-// ClientsData types
+/**********************************************
+  ClientsData types
+**********************************************/
 
 export type LogoData = {
   lightSource: string;
@@ -70,16 +101,9 @@ export type ClientsData = {
   brands: BrandFromAPI[];
 };
 
-// DownloadData types
-
-export type DownloadData = {
-  title: TitleData;
-  texts: string[];
-  links: LinkData[];
-  image: ImageData;
-};
-
-// FooterData types
+/**********************************************
+  FooterData types
+**********************************************/
 
 export type ContentData = {
   type: string;
@@ -102,10 +126,18 @@ export type FooterData = {
   developer: ColumnLinkData;
 };
 
-// WarrantyData types
+/**********************************************
+  AppData types
+**********************************************/
 
-export type WarrantyData = {
-  title: TitleData;
-  texts: string[];
-  image: ImageData;
-};
+export type AppData = {
+  primaryInfo: HeaderData;
+  download: DownloadData;
+  warranty: WarrantyData;
+  care: CareData;
+  cashback: CashbackData;
+  clients: ClientsData
+  secondaryInfo: FooterData;
+  }
+
+/*********************************************/
